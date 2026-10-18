@@ -1,0 +1,59 @@
+/* naming the colors*/
+:root {
+    --labov_green: #056839;
+    --labov_green_light: #167139;
+    --labov_gold: #c3814a;
+    --labov_black: #000000;
+}
+.text-labov {
+    color: var(--labov_green);
+}
+.text-gold {
+    color: var(--labov_gold);
+}
+
+.btn-menu {
+    background-color: var(--labov_green);
+    color: #ffffff;
+}
+.btn-menu:hover {
+    background-color: var(--labov_green_light);
+    border-color: var(--labov_gold);
+    color: #ffffff;
+}
+
+/*header*/
+#site-header {
+    position:sticky;
+    top: 0;
+    z-index:1020;
+}
+
+.labov-navbar .nav-link {
+    color: var(--labov_black);
+}
+
+.labov-navbar .nav-link:hover {
+    color: var(--labov_green_light);
+}
+
+.labov-navbar .nav-link.active {
+    color: var(--labov_green);
+    font-weight: bold;
+    border-bottom: 2.5px solid var(--labov_gold);
+}
+
+/*footer*/
+#site-footer {
+    border-top: 3px solid var(--labov_gold);
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+.footer-link {
+    color: var(--labov_green);
+}
+
+.footer-link:hover {
+    color: var(--labov_gold);
+}
