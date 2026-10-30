@@ -6,23 +6,26 @@ const header_html = `
             <div class="container">
                 <!--logo-->
                 <a class="navbar-brand py-0" href="index.html">
-                    <img class="site-logo" src="${logo_light}" alt="LaBov Coffee Logo" height="110">
+                    <img class="site-logo"
+                         src="${logo_light}" 
+                         alt="LaBov Coffee Logo" 
+                         height="110">
                 </a>
                 <!-- title is shrinked -->
-                <span class="navbar-text fw-bold text-labov d-none d-md-inline"> Labov Coffee</span>
-                
-                <button id="theme-toggle" 
-                        class="btn btn-outline-secondary order-lg-5 ms-auto ms-lg-2 me-lg-0" 
-                        type="button"
-                        aria-label="Switch to dark mode"> 
-                    <i class="bi bi-moon-fill"> </i>
-                </button>
+                <span class="navbar-text fw-bold text-labov d-none d-md-inline-block"> Labov Coffee</span>
                 
                 <!-- hamburger button | appears in small displays -->
-                <button class="navbar-toggler" type="button"
+                <button class="navbar-toggler ms-auto" type="button"
                         data-bs-toggle="collapse" data-bs-target="#mainnav"
                         aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <button id="theme-toggle" 
+                        class="btn btn-outline-secondary ms-2 order-lg-5" 
+                        type="button"
+                        aria-label="Switch to dark mode"> 
+                    <i class="bi bi-moon-fill"> </i>
                 </button>
                 
                 <!--navbar-->

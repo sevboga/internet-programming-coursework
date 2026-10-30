@@ -25,10 +25,24 @@
     <!--it takes it from layout.js-->
     <header id="site-header"></header>
 
-    <main class="container py-5">
-        <h1 class="text-labov">Welcome to LaBov Coffee</h1>
-        <p> Coffee, pastry and bakery since 2019. etc. etc.</p>
-        <a href="menu.html" class="btn btn-menu">Menu</a>
+    <main>
+        <!--Banner-->
+        <section class="position-relative">
+            <img src="img/banner.png" class="img-fluid w-100 d-block" alt="Coffee and pastries at LaBov Coffee">
+            <!--dark layer -->
+            <div class="banner position-absolute top-0 start-0 w-100 h-100"></div>
+            <!--centered-->
+            <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-3">
+                <h1 class="display-5 fw-bold">Welcome to <span class="text-gold">LaBov</span> Coffee</h1>
+                <p class="lead d-none d-md-block">Coffee, Pastry & Bakery since 2019.</p>
+                <a href="menu.html" class="btn btn-menu me-2">Menu</a>
+                <a href="contact.html" class="btn btn-outline-light">Visit us</a>
+            </div>
+        </section>
+
+        <section class="container py-5">
+            <p> Write a short intro about LaBov here. </p>
+        </section>
     </main>
     <!--it takes it from layout.js-->
     <footer id="site-footer"></footer>

@@ -11,7 +11,7 @@
 }
 
 [data-bs-theme="dark"] .text-labov {
-    color: var(--labov_green);
+    color: var(--labov_green_light);
 }
 
 .text-gold {
@@ -28,12 +28,28 @@
     color: #ffffff;
 }
 
+/* banner */
+
+.banner {
+    background-color: #00000080;
+}
+
 
 /*header*/
 #site-header {
     position:sticky;
     top: 0;
     z-index:1020;
+}
+/* text next to logo*/
+
+.labov-navbar .navbar-text {
+    margin-left: 5%;
+
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 .labov-navbar .nav-link {
@@ -54,7 +70,7 @@
     border-bottom: 2.5px solid var(--labov_gold);
 }
 
-[data-theme="dark"] .labov-navbar .nav-link.active {
+[data-bs-theme="dark"] .labov-navbar .nav-link.active {
     color: var(--labov_gold);
 }
 
@@ -83,4 +99,15 @@ body {
 
 main {
     flex-grow: 1;
+}
+
+/*headings*/
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+/*normal text*/
+/* Normal text */
+body {
+    font-family: Arial, sans-serif;
 }
