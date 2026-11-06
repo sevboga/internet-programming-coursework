@@ -6,6 +6,24 @@
     --labov_black: #000000;
 }
 
+/* push the footer to the end*/
+body {
+    /*font*/
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/*headings*/
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
 .text-labov {
     color: var(--labov_green);
 }
@@ -18,6 +36,7 @@
     color: var(--labov_gold);
 }
 
+/* buttons */
 .btn-menu {
     background-color: var(--labov_green);
     color: #ffffff;
@@ -31,9 +50,8 @@
 /* banner */
 
 .banner {
-    background-color: #00000080;
+    background-color: #00000080; /* the 80 is the alpha value (transparency) */
 }
-
 
 /*header*/
 #site-header {
@@ -45,7 +63,6 @@
 
 .labov-navbar .navbar-text {
     margin-left: 5%;
-
     font-family: Georgia, serif;
     font-size: 1.2rem;
     font-weight: bold;
@@ -86,28 +103,10 @@
     color: var(--labov_green);
 }
 
+[data-bs-theme="dark"] .footer-link {
+    color: var(--labov_green_light);
+}
+
 .footer-link:hover {
     color: var(--labov_gold);
-}
-
-/* push the footer to the end*/
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-main {
-    flex-grow: 1;
-}
-
-/*headings*/
-h1, h2, h3 {
-    font-family: Georgia, serif;
-}
-
-/*normal text*/
-/* Normal text */
-body {
-    font-family: Arial, sans-serif;
 }

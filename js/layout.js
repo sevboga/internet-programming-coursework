@@ -20,7 +20,7 @@ const header_html = `
                         aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+                <!---->
                 <button id="theme-toggle" 
                         class="btn btn-outline-secondary ms-2 order-lg-5" 
                         type="button"
