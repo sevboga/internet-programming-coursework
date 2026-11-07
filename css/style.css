@@ -110,3 +110,18 @@ h1, h2, h3 {
 .footer-link:hover {
     color: var(--labov_gold);
 }
+
+/*opening hours*/
+
+.opening-hours span {
+    display: inline-block;
+    width: 105px;
+}
+
+.opening-hours {
+    line-height: 1.6;
+}
+
+.bi-clock-fill {
+    margin-top: 4px;
+}
