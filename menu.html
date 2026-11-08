@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="LaBov Coffee, Pastry & Bakery since 2019.">
     <meta name="author" content="Sava Boga">
-
-    <!--logo on top-->
-    <title>LaBov Coffee</title>
+    <title>Menu | LaBov Coffee</title>
 
     <!--Bootstrap css & cnd-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,17 +17,244 @@
 
     <!-- retrieve our own css-->
     <link href="css/style.css" rel="stylesheet">
-
 </head>
 <body>
-<!--it takes it from layout.js-->
-<header id="site-header"></header>
+    <!--it takes it from layout.js-->
+    <header id="site-header"></header>
 
-<main>
+    <main class="container py-5">
+        <h1 class="text-labov">Our Menu</h1>
+        <p class="lead">Coffee, fresh pies and pastries, sandwiches, salads and crepes, all made daily.</p>
 
-</main>
-<!--it takes it from layout.js-->
-<footer id="site-footer"></footer>
+        <!--accordion menu-->
+        <div class="accordion my-4" id="menu_accordion">
 
+            <!--coffe and drinks-->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#coffee" aria-expanded="true" aria-controls="coffee">
+                        <i class="bi bi-cup-hot-fill me-2"></i> Coffee &amp; Drinks
+                    </button>
+                </h2>
+                <div id="coffee" class="accordion-collapse collapse show" data-bs-parent="#menu_accordion">
+                    <div class="accordion-body">
+
+                        <h3 class="fs-5 text-labov">Coffees</h3>
+                        <p class="small text-body-secondary mb-2">Prices are single / double. Every coffee is served with a glass of water.</p>
+                        <!--group listing-->
+                        <ul class="list-group list-group-flush mb-4">
+                            <li class="list-group-item d-flex justify-content-between"><span>Freddo espresso</span><span class="menu-price">&euro;2.30</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Freddo cappuccino</span><span class="menu-price">&euro;2.40</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Freddo cappuccino, flavored</span><span class="menu-price">&euro;3.00</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Espresso / lungo</span><span class="menu-price">&euro;1.40 / &euro;1.50</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Espresso macchiato</span><span class="menu-price">&euro;1.40 / &euro;1.60</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Cappuccino (espresso with milk foam)</span><span class="menu-price">&euro;1.60 / &euro;2.20</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Cappuccino (espresso with whipped cream)</span><span class="menu-price">&euro;1.70 / &euro;2.40</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Greek coffee</span><span class="menu-price">&euro;1.60 / &euro;2.20</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>French (filter) coffee</span><span class="menu-price">&euro;1.60 / &euro;2.20</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Nescaf&eacute; / frapp&eacute;</span><span class="menu-price">&euro;2.20</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Nescaf&eacute; latte / frapp&eacute; latte</span><span class="menu-price">&euro;2.50</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Frapp&eacute; with ice cream</span><span class="menu-price">&euro;3.20</span></li>
+                        </ul>
+                        <h3 class="fs-5 text-labov">Drinks</h3>
+                        <ul class="list-group list-group-flush mb-4">
+                            <li class="list-group-item d-flex justify-content-between"><span>Tea &quot;La Vie en Rose&quot;, large variety</span><span class="menu-price">from &euro;2.20</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Chamomile</span><span class="menu-price">&euro;2.20</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Fresh orange juice, 400 ml</span><span class="menu-price">&euro;3.00</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Smoothies, 400 ml</span><span class="menu-price">&euro;3.50</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Strawberry granita</span><span class="menu-price">&euro;2.20</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Watermelon granita</span><span class="menu-price">&euro;2.20</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Freddoccino</span><span class="menu-price">&euro;3.20</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Hot chocolate</span><span class="menu-price">&euro;3.00</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Cold chocolate</span><span class="menu-price">&euro;3.00</span></li>
+                        </ul>
+                        <h3 class="fs-5 text-labov">Extras for coffee &amp; drinks</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between"><span>Whipped cream</span><span class="menu-price">+&euro;0.80</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Baileys</span><span class="menu-price">+&euro;1.20</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Ice cream</span><span class="menu-price">+&euro;1.00</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Extra espresso shot</span><span class="menu-price">+&euro;1.00</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--pies and pastries-->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pastries" aria-expanded="false" aria-controls="pastries">
+                        <i class="bi bi-basket2-fill me-2"></i> Pies &amp; Pastries
+                    </button>
+                </h2>
+                <div id="pastries" class="accordion-collapse collapse" data-bs-parent="#menu_accordion">
+                    <div class="accordion-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between"><span>Patsavouropita, extra 4 cheeses</span><span class="menu-price">&euro;2.80</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Patsavouropita, spinach &amp; cheese</span><span class="menu-price">&euro;2.80</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Cheese pie, extra, half-moon</span><span class="menu-price">&euro;1.80</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Naxos graviera cheese pie</span><span class="menu-price">&euro;2.20</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Ioannina-style cheese pie</span><span class="menu-price">&euro;2.60</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Chicken pie</span><span class="menu-price">&euro;3.20</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Ham &amp; cheese pie, pressed</span><span class="menu-price">&euro;2.80</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Sausage pie with sauce &amp; cheese</span><span class="menu-price">&euro;2.60</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Croissant, ham &amp; cheese special</span><span class="menu-price">&euro;1.80</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Croissant, giant praline</span><span class="menu-price">&euro;1.80</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>French chocolate croissant</span><span class="menu-price">&euro;1.60</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>French butter croissant</span><span class="menu-price">&euro;1.30</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Multigrain koulouri with anthotyro cheese</span><span class="menu-price">&euro;1.90</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Flogera (pastry roll) with Philadelphia</span><span class="menu-price">&euro;1.90</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Bougatsa, Thessaloniki style</span><span class="menu-price">&euro;1.60</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Kasseri pie</span><span class="menu-price">&euro;1.70</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Burger (bifteki) pie</span><span class="menu-price">&euro;2.40</span></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Pizza</span><span class="menu-price">&euro;2.00</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--sandwitches-->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#sandwiches" aria-expanded="false" aria-controls="sandwiches">
+                        <i class="bi bi-egg-fried me-2"></i> Sandwiches
+                    </button>
+                </h2>
+                <div id="sandwiches" class="accordion-collapse collapse" data-bs-parent="#menu_accordion">
+                    <div class="accordion-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between gap-3"><div><strong>Baguette*</strong><br><small class="text-body-secondary">Ham, gouda cheese, tomato, iceberg</small></div><span class="menu-price">&euro;2.80</span></li>
+                            <li class="list-group-item d-flex justify-content-between gap-3"><div><strong>Baguette*</strong><br><small class="text-body-secondary">Gouda cheese, roast turkey, tomato, iceberg</small></div><span class="menu-price">&euro;2.80</span></li>
+                            <li class="list-group-item d-flex justify-content-between gap-3"><div><strong>Baguette</strong><br><small class="text-body-secondary">Feta, olive paste, tomato, iceberg</small></div><span class="menu-price">&euro;3.00</span></li>
+                            <li class="list-group-item d-flex justify-content-between gap-3"><div><strong>Baguette*</strong><br><small class="text-body-secondary">Air-dried salami, gouda cheese, tomato, iceberg, mayonnaise</small></div><span class="menu-price">&euro;2.80</span></li>
+                            <li class="list-group-item d-flex justify-content-between gap-3"><div><strong>Baguette*</strong><br><small class="text-body-secondary">Fresh chicken, parmesan, sauce, tomato, iceberg</small></div><span class="menu-price">&euro;3.40</span></li>
+                            <li class="list-group-item d-flex justify-content-between gap-3"><div><strong>Dinkel bread sandwich</strong><br><small class="text-body-secondary">Philadelphia, smoked turkey, iceberg</small></div><span class="menu-price">&euro;2.00</span></li>
+                            <li class="list-group-item d-flex justify-content-between gap-3"><div><strong>Arabic pita</strong><br><small class="text-body-secondary">Turkey, Philadelphia cheese, iceberg</small></div><span class="menu-price">&euro;3.00</span></li>
+                            <li class="list-group-item d-flex justify-content-between gap-3"><div><strong>Arabic pita</strong><br><small class="text-body-secondary">Fresh roast chicken, sauce, edam cheese, iceberg, tomato</small></div><span class="menu-price">&euro;3.40</span></li>
+                            <li class="list-group-item d-flex justify-content-between gap-3"><div><strong>Brioche, large</strong><br><small class="text-body-secondary">Tuna, egg, homemade mayonnaise, iceberg</small></div><span class="menu-price">&euro;3.30</span></li>
+                            <li class="list-group-item d-flex justify-content-between gap-3"><div><strong>Brioche, small</strong><br><small class="text-body-secondary">Ham, cheese, sauce</small></div><span class="menu-price">&euro;1.80</span></li>
+                            <li class="list-group-item d-flex justify-content-between gap-3"><div><strong>Brioche, small</strong><br><small class="text-body-secondary">Turkey, Philadelphia cheese</small></div><span class="menu-price">&euro;1.80</span></li>
+                            <li class="list-group-item d-flex justify-content-between gap-3"><div><strong>Brioche, small</strong><br><small class="text-body-secondary">Tuna, egg, sauce, iceberg</small></div><span class="menu-price">&euro;1.80</span></li>
+                            <li class="list-group-item d-flex justify-content-between gap-3"><div><strong>Toast, whole wheat or white</strong><br><small class="text-body-secondary">Ham &amp; cheese / turkey &amp; cheese</small></div><span class="menu-price">&euro;1.50</span></li>
+                        </ul>
+                        <p class="small text-body-secondary mt-3 mb-1">* You can choose your baguette: &quot;Gabazin&quot; or multigrain.</p>
+                        <p class="small text-body-secondary mb-0">Extra ingredients: ham, turkey, air-dried salami +&euro;0.30. Egg +&euro;0.50.</p>
+                    </div>
+                </div>
+            </div>
+            <!--salads-->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#salads" aria-expanded="false" aria-controls="salads">
+                        <i class="bi bi-flower1 me-2"></i> Salads
+                    </button>
+                </h2>
+                <div id="salads" class="accordion-collapse collapse" data-bs-parent="#menu_accordion">
+                    <div class="accordion-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between gap-3"><div><strong>Caesar's</strong><br><small class="text-body-secondary">French lettuce, chicken, parmesan, croutons, olive oil, vinegar or Caesar's sauce, corn</small></div><span class="menu-price">&euro;4.30</span></li>
+                            <li class="list-group-item d-flex justify-content-between gap-3"><div><strong>Chef</strong><br><small class="text-body-secondary">French lettuce, egg, ham, tomato, gouda cheese, chef sauce</small></div><span class="menu-price">&euro;4.30</span></li>
+                            <li class="list-group-item d-flex justify-content-between gap-3"><div><strong>Tuna salad</strong><br><small class="text-body-secondary">French lettuce, cucumber, tuna, carrot, corn, olive oil, vinegar or chef sauce</small></div><span class="menu-price">&euro;4.30</span></li>
+                            <li class="list-group-item d-flex justify-content-between gap-3"><div><strong>Greek salad</strong><br><small class="text-body-secondary">Tomato, cucumber, pepper, onion, olive oil, feta</small></div><span class="menu-price">&euro;3.60</span></li>
+                        </ul>
+                        <p class="small text-body-secondary mt-3 mb-0">Also available: a wide variety of handmade cereal bars, koulouria (bread rings), breadsticks and dunking biscuits.</p>
+                    </div>
+                </div>
+            </div>
+            <!--savory fillings-->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#savory_fillings" aria-expanded="false" aria-controls="savory_fillings">
+                        <i class="bi bi-plus-circle-fill me-2"></i> Savory Crepe Fillings
+                    </button>
+                </h2>
+                <div id="savory_fillings" class="accordion-collapse collapse" data-bs-parent="#menu_accordion">
+                    <div class="accordion-body">
+                        <p class="mb-1">Start with the crepe base (<span class="menu-price">&euro;2.00</span>) and add your fillings.</p>
+                        <p class="small text-body-secondary mb-4">We can also make sandwiches with these ingredients, on a bread of your choice.</p>
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                                <h3 class="fs-5 text-labov">Cheese</h3>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between"><span>Gouda</span><span class="menu-price">&euro;1.00</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Mozzarella</span><span class="menu-price">&euro;1.00</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Edam</span><span class="menu-price">&euro;1.00</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Roquefort</span><span class="menu-price">&euro;1.00</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Philadelphia</span><span class="menu-price">&euro;1.00</span></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h3 class="fs-5 text-labov">Vegetables</h3>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between"><span>Tomato</span><span class="menu-price">&euro;0.50</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Pepper</span><span class="menu-price">&euro;0.50</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Corn</span><span class="menu-price">&euro;0.50</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Olives</span><span class="menu-price">&euro;0.50</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Lettuce</span><span class="menu-price">&euro;0.50</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Mushrooms</span><span class="menu-price">&euro;0.50</span></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h3 class="fs-5 text-labov">Salads &amp; spreads</h3>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between"><span>Tyrosalata (cheese spread)</span><span class="menu-price">&euro;0.50</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Tyrokafteri (spicy cheese spread)</span><span class="menu-price">&euro;0.50</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Garden salad</span><span class="menu-price">&euro;0.50</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Ham salad / Hungarian salad</span><span class="menu-price">&euro;0.50</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Russian salad</span><span class="menu-price">&euro;0.50</span></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h3 class="fs-5 text-labov">Cold cuts &amp; sausages</h3>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between"><span>Ham</span><span class="menu-price">&euro;0.50</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Bacon</span><span class="menu-price">&euro;1.00</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Turkey</span><span class="menu-price">&euro;1.00</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Smoked pork</span><span class="menu-price">&euro;1.00</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Air-dried salami</span><span class="menu-price">&euro;1.00</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Village sausage</span><span class="menu-price">&euro;1.00</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Frankfurter sausage</span><span class="menu-price">&euro;1.00</span></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h3 class="fs-5 text-labov">Sauces</h3>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between"><span>Mayonnaise</span><span class="menu-price">&euro;0.50</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>BBQ</span><span class="menu-price">&euro;0.50</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Mustard, ketchup, Tabasco</span><span class="menu-price">&euro;0.70</span></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h3 class="fs-5 text-labov">Extra</h3>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between"><span>Egg</span><span class="menu-price">&euro;0.50</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Potato chips</span><span class="menu-price">&euro;0.50</span></li>
+                                    <li class="list-group-item d-flex justify-content-between"><span>Sticks</span><span class="menu-price">&euro;0.50</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="small text-body-secondary">Prices include all taxes and may change without notice.</p>
+        <div class="alert alert-success" role="alert">
+            <i class="bi bi-bicycle me-2"></i>
+            <strong>Delivery</strong> Monday to Saturday, 06:30-19:00. Minimum order &euro;3.
+            Call <a href="tel:2106470141" class="alert-link">+30 210 6470 141</a> or
+            <a href="tel:6987555405" class="alert-link">+30 698 7555 405</a>.
+        </div>
+        <div class="alert alert-warning" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+            Allergic to an ingredient or food? Please let our staff know. We will be more than happy to help.
+        </div>
+    </main>
+
+
+    <!--it takes it from layout.js-->
+    <footer id="site-footer"></footer>
 </body>
 </html>
