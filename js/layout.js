@@ -1,6 +1,11 @@
 const logo_light = "img/logo.png";
 const logo_dark = "img/logo_dm.png";
 
+const favicon = document.createElement("link");
+favicon.rel="icon";
+favicon.href = "img/favicon.png";
+document.head.appendChild(favicon);
+
 const header_html = ` 
         <nav class="navbar navbar-expand-lg bg-body border-bottom labov-navbar">
             <div class="container">
