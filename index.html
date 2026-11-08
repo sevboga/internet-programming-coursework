@@ -14,6 +14,7 @@
 
     <!-- retrieve our own js-->
     <script src="js/layout.js" defer></script>
+    <script src="js/weather.js" defer></script>
 
     <!-- retrieve our own css-->
     <link href="css/style.css" rel="stylesheet">
@@ -37,9 +38,27 @@
                 <a href="contact.html" class="btn btn-outline-light">Visit us</a>
             </div>
         </section>
-
         <section class="container py-5">
-            <p> Write a short intro about LaBov here. </p>
+            <div class="row align-items-center g-4">
+                <div class="col-md-8">
+                    <h2 class="text-labov">Our story</h2>
+                    <p>At La Bov Coffee, we're more than just a coffee shop. We're a little family with a big love for coffee, fresh pastries, and the simple joys of everyday life. Since 2019, we've been serving every cup with care, every treat with love, and every guest with a smile. Whether you're starting your morning or taking a well-deserved break, we're here to make your day a little warmer, sweeter, and brighter. <b>Made with love, served with a smile.</b></p>
+                </div>
+            <!--weather tab-->
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h2 class="fs-6 text-body-secondary">Weather in Athens</h2>
+                            <i id="weather_icon" class="bi bi-cloud-fill display-3 text-gold"></i>
+                            <p id="weather_temp" class="display-6 fw-bold mb-0">--</p>
+                            <p id="weather_desc" class="mb-2">Loading...</p>
+                            <p class="mb-2"><i class="bi bi-droplet-fill text-primary me-1"></i>Chance of rain: <strong id="weather_rain">---</strong></p>
+                            <p id="weather_tip" class="small mb-2"></p>
+                            <a href="https://open-meteo.com/" target="_blank" class="small text text-body-secondary">Weather data by Open-Meteo.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <!--it takes it from layout.js-->

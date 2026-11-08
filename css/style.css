@@ -93,7 +93,6 @@ h1, h2, h3 {
 
 /*Icons in dark/light mode*/
 
-
 .bi,
 .bi.text-gold {
     color: var(--labov_gold);
@@ -102,6 +101,27 @@ h1, h2, h3 {
 [data-bs-theme="dark"] .bi,
 [data-bs-theme="dark"] .bi.text-gold {
     color: var(--labov_green_light);
+}
+
+/*menu*/
+.menu-price {
+    color: var(--labov_green);
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+[data-bs-theme="dark"] .menu-price {
+    color: var(--labov_gold);
+}
+
+.accordion {
+    --bs-accordion-active-color: var(--labov_green);
+    --bs-accordion-active-bg: rgba(5, 104, 57, 0.08);
+}
+
+[data-bs-theme="dark"] .accordion {
+    --bs-accordion-active-color: var(--labov_gold);
+    --bs-accordion-active-bg: rgba(195, 129, 74, 0.12);
 }
 
 /*contact us*/
@@ -117,6 +137,7 @@ h1, h2, h3 {
 .bi-clock-fill {
     margin-top: 4px;
 }
+
 
 /* footer */
 #site-footer {
