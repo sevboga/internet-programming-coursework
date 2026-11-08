@@ -20,16 +20,113 @@
 
 </head>
 <body>
-<!--it takes it from layout.js-->
-<header id="site-header"></header>
+    <!--it takes it from layout.js-->
+    <header id="site-header"></header>
 
-<main>
+    <main class="container py-5">
+        <h1 class="text-labov mb-4">About LaBov</h1>
 
-
-
-</main>
-<!--it takes it from layout.js-->
-<footer id="site-footer"></footer>
-
+        <!--about section-->
+        <section class="row align-items-center g-4 mb-5">
+            <div class="col-md-6">
+                <img src="img/interior1.jpg" class="img-fluid rounded" alt="LaBov Coffee bakery interior">
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-labov">Our Story</h2>
+                <p>Since 2019, LaBov Coffee has been a small family coffee shop in the heart of Athens, built around a simple idea: a good cup of coffee and a friendly smile can make someone's day better. We believe that coffee is more than just a drink. It's part of our morning routine, a reason to take a break, and a lovely excuse to spend time with friends and family. From freshly brewed coffee and homemade pies to delicious pastries, sandwiches, and sweet treats, everything we serve is prepared with care and love.</p>
+                <p>At LaBov, we want everyone who walks through our doors to feel welcome. Whether you're stopping by for your first coffee of the day, grabbing a quick breakfast before work, or enjoying a relaxing afternoon, we're always happy to see you. Our goal is to create a cozy and friendly atmosphere where even the smallest moments become special.</p>
+                <p>We created this website to bring a little piece of LaBov closer to you. Here, you can explore our menu, discover our products, learn more about our coffee shop, check the weather in Athens, and easily find our location and contact information. The website also includes a task management section that allows users to organize activities and keep track of their progress.</p>
+                <p class="fw-bold">Made with love, served with a smile.</p>
+            </div>
+        </section>
+        <!--team members in grid cards-->
+        <section class="mb-5">
+            <h2 class="text-labov text-center mb-4">Meet our Team</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="img/person.jpg" class="card-img-top" style="height: 260px; object-fit: cover;" alt="LaBov team member">
+                        <div class="card-body">
+                            <h3 class="card-title fs-4">Joana</h3>
+                            <p class="fw-bold text-labov">Your Barista</p>
+                            <p class="card-text">The one who will make your morning coffee and make sure to feed you with our best homemade Pites and sandwiches.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="img/person4.jpg" class="card-img-top" style="height: 260px; object-fit: cover;" alt="LaBov team member">
+                        <div class="card-body">
+                            <h3 class="card-title fs-4">Menios</h3>
+                            <p class="fw-bold text-labov">Your Barista and Delivery Guy</p>
+                            <p class="card-text">Menios is the one who will make sure your order will reach before your Hot coffee gets cold or your Cool coffee gets hot.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="img/person4.jpg" class="card-img-top" style="height: 260px; object-fit: cover;" alt="LaBov team member">
+                        <div class="card-body">
+                            <h3 class="card-title fs-4">Savvas and Aggelos</h3>
+                            <p class="fw-bold text-labov">Your Baristas</p>
+                            <p class="card-text">Savvas and Aggelos are the ones who will prepare your order and serve you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--photo carousel-->
+        <section class="mb-5">
+            <h2 class="text-labov text-center mb-4">A small taste from LaBov</h2>
+            <div id="about_carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                        <img src="img/beverage.jpg" class="d-block w-100"
+                             style="height: 400px; object-fit: cover;" alt="Coffee, snacks and pastries">
+                        <div class="carousel-caption bg-dark bg-opacity-10 rounded p-2">
+                            <h3 class="fs-5">Coffee &amp; Fresh Treats</h3>
+                            <p class="mb-0">A little something for every part of your day.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/interior1.jpg" class="d-block w-100"
+                             style="height: 400px; object-fit: cover;" alt="Inside the LaBov">
+                        <div class="carousel-caption bg-white bg-opacity-10 rounded p-2">
+                            <h3 class="fs-5">Our Café</h3>
+                            <p class="mb-0">A welcoming place to stop by and take a break.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/koulouri1.jpg" class="d-block w-100"
+                             style="height: 400px; object-fit: cover;" alt="Freshly baked pastries at LaBov">
+                        <div class="carousel-caption bg-white bg-opacity-10 rounded p-2">
+                            <h3 class="fs-5">Fresh From the Oven</h3>
+                            <p class="mb-0">Enjoy our freshly prepared bakery treats.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/fruit.jpg" class="d-block w-100"
+                             style="height: 400px; object-fit: cover;" alt="Fresh fruit prepared for LaBov customers">
+                        <div class="carousel-caption bg-white bg-opacity-15 rounded p-2">
+                            <h3 class="fs-5">Fresh Choices</h3>
+                            <p class="mb-0">Something colorful and refreshing.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#about_carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#about_carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </main>
+    <!--it takes it from layout.js-->
+    <footer id="site-footer"></footer>
 </body>
 </html>

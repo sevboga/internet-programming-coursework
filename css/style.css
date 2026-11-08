@@ -1,9 +1,12 @@
 /* naming the colors*/
 :root {
     --labov_green: #056839;
-    --labov_green_light: #167139;
+    --labov_green_light: #0ed35b;
+    --labov_green_dm: #00c96c;
     --labov_gold: #c3814a;
     --labov_black: #000000;
+
+    --bs-body-font-family: Arial, sans-serif;
 }
 
 /* push the footer to the end*/
@@ -20,7 +23,7 @@ main {
 }
 
 /*headings*/
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     font-family: Georgia, serif;
 }
 
@@ -29,7 +32,7 @@ h1, h2, h3 {
 }
 
 [data-bs-theme="dark"] .text-labov {
-    color: var(--labov_green_light);
+    color: var(--labov_green_dm);
 }
 
 .text-gold {
