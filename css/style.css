@@ -91,6 +91,33 @@ h1, h2, h3 {
     color: var(--labov_gold);
 }
 
+/*Icons in dark/light mode*/
+
+
+.bi,
+.bi.text-gold {
+    color: var(--labov_gold);
+}
+
+[data-bs-theme="dark"] .bi,
+[data-bs-theme="dark"] .bi.text-gold {
+    color: var(--labov_green_light);
+}
+
+/*contact us*/
+
+.opening-hours {
+    line-height: 1.6;
+}
+.opening-hours span {
+    display: inline-block;
+    width: 85px;
+}
+
+.bi-clock-fill {
+    margin-top: 4px;
+}
+
 /* footer */
 #site-footer {
     background-color: var(--bs-body-bg);
@@ -109,19 +136,4 @@ h1, h2, h3 {
 
 .footer-link:hover {
     color: var(--labov_gold);
-}
-
-/*opening hours*/
-
-.opening-hours span {
-    display: inline-block;
-    width: 105px;
-}
-
-.opening-hours {
-    line-height: 1.6;
-}
-
-.bi-clock-fill {
-    margin-top: 4px;
 }

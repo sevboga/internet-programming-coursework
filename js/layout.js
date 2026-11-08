@@ -78,6 +78,8 @@ const html_element = document.querySelector("html");
 
 function changeTheme(theme) {
     html_element.setAttribute("data-bs-theme", theme);
+    //save the theme localstorage
+    localStorage.setItem("theme", theme);
 
     //changing logos
     document.querySelectorAll(".site-logo").forEach(logo => {
@@ -110,6 +112,7 @@ theme_button.addEventListener("click", () => {
     }
 });
 
-//begin with light mode
-changeTheme("light");
+//load the last saved theme
+const saved_theme = localStorage.getItem("theme") || "light";
+changeTheme(saved_theme);
 
