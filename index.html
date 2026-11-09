@@ -14,7 +14,9 @@
 
     <!-- retrieve our own js-->
     <script src="js/layout.js" defer></script>
+    <script src="js/storage.js" defer></script>
     <script src="js/weather.js" defer></script>
+    <script src="js/tasks.js" defer></script>
 
     <!-- retrieve our own css-->
     <link href="css/style.css" rel="stylesheet">
@@ -27,7 +29,7 @@
     <main>
         <!--Banner-->
         <section class="position-relative">
-            <img src="img/banner.png" class="img-fluid w-100 d-block" alt="Coffee and pastries at LaBov Coffee">
+            <img src="img/other/banner.png" class="img-fluid w-100 d-block" alt="Coffee and pastries at LaBov Coffee">
             <!--dark layer -->
             <div class="banner position-absolute top-0 start-0 w-100 h-100"></div>
             <!--centered-->
@@ -57,6 +59,21 @@
                             <a href="https://open-meteo.com/" target="_blank" class="small text text-body-secondary">Weather data by Open-Meteo.com</a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <!-- Task Analytics -->
+        <section class="container pb-5">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="fs-4 text-labov">Task Analytics</h2>
+
+                    <h3 class="fs-6 text-body-secondary mt-3">By status</h3>
+                    <div id="status_bars"></div>
+
+                    <h3 class="fs-6 text-body-secondary mt-4">By priority</h3>
+                    <div id="priority_bars"></div>
+                    <a href="tasks.html" class="btn btn-menu mt-4">View All Tasks</i></a>
                 </div>
             </div>
         </section>

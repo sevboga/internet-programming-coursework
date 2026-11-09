@@ -1,9 +1,9 @@
-const logo_light = "img/logo.png";
-const logo_dark = "img/logo_dm.png";
+const logo_light = "img/logo/logo.png";
+const logo_dark = "img/logo/logo_dm.png";
 
 const favicon = document.createElement("link");
 favicon.rel="icon";
-favicon.href = "img/favicon.png";
+favicon.href = "img/logo/favicon.png";
 document.head.appendChild(favicon);
 
 const header_html = ` 
